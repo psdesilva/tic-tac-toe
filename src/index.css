@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +16,134 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container {
+  width: 500px;
+  margin: 30px auto;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 80%;
+  margin: 10px auto;
+  display: block;
+}
+
+.clock {
+  text-align: center;
+  margin: 10px auto;
+  display: block;
+}
+
+#board {
+  height: 90%;
+  width: 90%;
+  border: 1px solid black;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#game {
+  height: 400px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.square {
+  width: 33.33333333333333%;
+  height: 33.33333333333333%;
+  border: 1px solid #b4b4b4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#start-page {
+  height: 90%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form-control {
+  width: 100%
+}
+
+.form-control label {
+  font-size: 1.5em;
+}
+
+.form-control input {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.form-control:first-child {
+  margin-bottom: 10%;
+}
+
+.form-control input {
+  width: 100%
+}
+
+#start-page button {
+  margin-top: 10%;
+  width: 80%;
+  height: 30px;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+#start-page button:hover {
+  background-color: black;
+  color: white;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+}
+
+button {
+  width: 40%;
+  height: 30px;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
 }
